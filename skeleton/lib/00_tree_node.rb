@@ -33,14 +33,19 @@ class PolyTreeNode
 
     self.children.each do |child|
       child_node = child.dfs(target_value)
-      debugger
+      #debugger
       if child_node
         return child_node
-      else
-        return nil
       end
-
+      
+      nil
     end
+
+    nil
+  end
+
+  def inspect
+    self.value
   end
 
 end
